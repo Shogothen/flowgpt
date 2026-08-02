@@ -2,6 +2,7 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
+  <meta name="theme-color" content="#0C0442">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coaching, Readings und Begleitung für Frauen – Angebote und Preise | Flow your Design</title>
   <meta name="description" content="Zurück zu dir (10 Wochen), Klar entscheiden (3 Sessions), Human Design Reading, Eltern-Kind-Reading und Flow Circle. Alle Angebote und Preise von Sarah Graf.">
@@ -18,6 +19,12 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+<div class="himmel"></div>
+<div class="himmel-bild" id="himmel-bild"></div>
+<div class="himmel-tiefe"></div>
+<canvas id="sternenfeld"></canvas>
+
 
 <header class="header">
   <div class="wrap header__inner">
@@ -116,7 +123,7 @@
           <a class="btn btn--ghost" href="anfrage.html?angebot=Zurück zu dir">Direkt anfragen</a>
         </div>
       </div>
-      <p class="reveal" style="max-width: 960px; margin: 1.6rem auto 0; font-size: 0.98rem; color: var(--tinte-soft);">Du warst schon bei mir in Begleitung oder hast ein einzelnes, klar umrissenes Thema? Dann gibt es das <strong>systemische Einzelcoaching</strong> (60 Minuten, 149&nbsp;€ · Fünferpaket 690&nbsp;€) – <a href="anfrage.html?angebot=Systemisches Einzelcoaching" style="color: var(--gold-text);">hier anfragen</a>.</p>
+      <p class="reveal" style="max-width: 960px; margin: 1.6rem auto 0; font-size: 0.98rem; color: var(--licht-weich);">Du warst schon bei mir in Begleitung oder hast ein einzelnes, klar umrissenes Thema? Dann gibt es das <strong>systemische Einzelcoaching</strong> (60 Minuten, 149&nbsp;€ · Fünferpaket 690&nbsp;€) – <a href="anfrage.html?angebot=Systemisches Einzelcoaching" style="color: var(--gold);">hier anfragen</a>.</p>
     </div>
   </section>
 
@@ -177,7 +184,7 @@
           <a class="btn btn--nacht" href="anfrage.html?angebot=Du und dein Kind">Reading anfragen</a>
         </article>
       </div>
-      <p class="reveal" style="margin-top: 1.6rem; font-size: 0.98rem; color: var(--tinte-soft);">Ihr möchtet euch als ganze Familie anschauen? <strong>Eure Familiendynamik</strong> (150 Minuten, bis vier Charts, inklusive Maßnahmenplan und 30-minütigem Folgetermin, 449&nbsp;€) – <a href="anfrage.html?angebot=Eure Familiendynamik" style="color: var(--gold-text);">hier anfragen</a>.</p>
+      <p class="reveal" style="margin-top: 1.6rem; font-size: 0.98rem; color: var(--licht-weich);">Ihr möchtet euch als ganze Familie anschauen? <strong>Eure Familiendynamik</strong> (150 Minuten, bis vier Charts, inklusive Maßnahmenplan und 30-minütigem Folgetermin, 449&nbsp;€) – <a href="anfrage.html?angebot=Eure Familiendynamik" style="color: var(--gold);">hier anfragen</a>.</p>
     </div>
   </section>
 
@@ -306,6 +313,8 @@
   </div>
 </footer>
 
+<script src="himmel.js" defer></script>
+<script src="himmel-init.js" defer></script>
 <script src="site.js"></script>
 </body>
 </html>

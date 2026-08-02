@@ -1,40 +1,12 @@
-/* Lokale Schriften – keine Übertragung an Dritte */
+/* Lokale Schriften – Designsprache des Chartrechners */
 
-/* TAN Twinkle ist eine kommerzielle Schrift (TAN Type Foundry).
-   Nach Lizenzkauf die Datei als TANTwinkle.woff2 in diesen Ordner legen –
-   bis dahin greift automatisch Cormorant Garamond als Fallback. */
-@font-face {
-  font-family: "TAN Twinkle";
-  src: url("TANTwinkle.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Cormorant Garamond";
-  src: url("CormorantGaramond.woff2") format("woff2");
-  font-weight: 300 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Cormorant Garamond";
-  src: url("CormorantGaramond-Italic.woff2") format("woff2");
-  font-weight: 300 700;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Raleway";
-  src: url("Raleway.woff2") format("woff2");
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Raleway";
-  src: url("Raleway-Italic.woff2") format("woff2");
-  font-weight: 100 900;
-  font-style: italic;
-  font-display: swap;
-}
+/* TAN Twinkle (kommerzielle Highlight-Schrift): nach Lizenzkauf als
+   TANTwinkle.woff2 hier ablegen – bis dahin greift Marcellus wie im Rechner. */
+@font-face { font-family: "TAN Twinkle"; src: url("TANTwinkle.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Marcellus"; src: url("Marcellus.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Radley"; src: url("Radley.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Radley"; src: url("Radley-Italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Jost"; src: url("Jost.woff2") format("woff2"); font-weight: 100 900; font-style: normal; font-display: swap; }
+@font-face { font-family: "Jost"; src: url("Jost-Italic.woff2") format("woff2"); font-weight: 100 900; font-style: italic; font-display: swap; }
+/* Raleway bleibt im Ordner, falls Sarah später zurück will: eine Zeile in styles.css */
+@font-face { font-family: "Raleway"; src: url("Raleway.woff2") format("woff2"); font-weight: 100 900; font-style: normal; font-display: swap; }

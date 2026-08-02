@@ -46,7 +46,7 @@ Die Galerie ist für automatische Zugriffe gesperrt – daher manuell: Fotos aus
 
 ## Schrift TAN Twinkle (Sarahs Wunsch-Highlight-Schrift)
 
-TAN Twinkle ist eine kommerzielle Schrift der TAN Type Foundry und darf nicht ohne Lizenz eingebunden werden. Lizenz kaufen (tantypefoundry.com, Desktop+Web), die Datei als `fonts/TANTwinkle.woff2` ablegen – fertig, der `@font-face`-Slot existiert bereits. Bis dahin zeigt die Seite automatisch Cormorant Garamond als eleganten Fallback. Raleway ist bereits lokal eingebunden.
+TAN Twinkle ist eine kommerzielle Schrift der TAN Type Foundry und darf nicht ohne Lizenz eingebunden werden. Lizenz kaufen (tantypefoundry.com, Desktop+Web), die Datei als `fonts/TANTwinkle.woff2` ablegen – fertig, der `@font-face`-Slot existiert bereits. Bis dahin zeigt die Seite automatisch Marcellus – die Schrift des Chartrechners. Grundschrift ist Jost (wie im Rechner); Raleway liegt weiter im Fonts-Ordner, ein Wechsel ist eine Zeile in styles.css (--font-body).
 
 ## Nächste Ausbaustufen
 

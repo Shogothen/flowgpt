@@ -2,6 +2,7 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
+  <meta name="theme-color" content="#0C0442">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anfrage senden | Flow your Design</title>
   <meta name="description" content="Frage dein Reading, dein Coaching oder die 10-Wochen-Begleitung unverbindlich an. Antwort innerhalb von 48 Stunden.">
@@ -11,6 +12,12 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+<div class="himmel"></div>
+<div class="himmel-bild" id="himmel-bild"></div>
+<div class="himmel-tiefe"></div>
+<canvas id="sternenfeld"></canvas>
+
 
 <header class="header">
   <div class="wrap header__inner">
@@ -36,7 +43,7 @@
     <div class="wrap wrap--narrow">
       <span class="eyebrow">Anfrage</span>
       <h1 style="font-size: clamp(2.2rem, 5vw, 3.2rem); margin-bottom: 1rem;">Schreib mir kurz – ich melde mich</h1>
-      <p class="lead" style="margin-bottom: 2.4rem;">Drei Felder, eine Minute: Sag mir, wofür du dich interessierst, und ich antworte dir innerhalb von 48 Stunden mit Terminvorschlägen. Wenn du lieber sprichst, buche direkt das <a href="https://tidycal.com/flowyourdesign/wake-up-call" style="color: var(--gold-text);">kostenlose Orientierungsgespräch</a>.</p>
+      <p class="lead" style="margin-bottom: 2.4rem;">Drei Felder, eine Minute: Sag mir, wofür du dich interessierst, und ich antworte dir innerhalb von 48 Stunden mit Terminvorschlägen. Wenn du lieber sprichst, buche direkt das <a href="https://tidycal.com/flowyourdesign/wake-up-call" style="color: var(--gold);">kostenlose Orientierungsgespräch</a>.</p>
 
       <!-- FormSubmit: E-Mail-Zustellung ohne Backend. Vor Livegang einmal absenden und
            den Bestätigungslink in Sarahs Postfach anklicken (Aktivierung). -->
@@ -78,7 +85,7 @@
 
         <label class="form__check">
           <input type="checkbox" required>
-          <span>Ich habe die <a href="datenschutz.html" style="color: var(--gold-text);">Datenschutzerklärung</a> gelesen. Meine Angaben werden nur zur Bearbeitung dieser Anfrage verwendet.</span>
+          <span>Ich habe die <a href="datenschutz.html" style="color: var(--gold);">Datenschutzerklärung</a> gelesen. Meine Angaben werden nur zur Bearbeitung dieser Anfrage verwendet.</span>
         </label>
 
         <div class="btn-row" style="margin-top: 0.6rem;">
@@ -86,7 +93,7 @@
         </div>
       </form>
 
-      <p style="margin-top: 2rem; font-size: 0.95rem; color: var(--tinte-soft);">Lieber klassisch? Du erreichst mich auch direkt unter <a href="mailto:sarah.graf@flowyourdesign.com" style="color: var(--gold-text);">sarah.graf@flowyourdesign.com</a>.</p>
+      <p style="margin-top: 2rem; font-size: 0.95rem; color: var(--licht-weich);">Lieber klassisch? Du erreichst mich auch direkt unter <a href="mailto:sarah.graf@flowyourdesign.com" style="color: var(--gold);">sarah.graf@flowyourdesign.com</a>.</p>
     </div>
   </section>
 </main>
@@ -99,6 +106,8 @@
   </div>
 </footer>
 
+<script src="himmel.js" defer></script>
+<script src="himmel-init.js" defer></script>
 <script src="site.js"></script>
 <script>
   // Angebot aus dem Link vorauswählen (anfrage.html?angebot=...)
