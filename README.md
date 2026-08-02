@@ -30,7 +30,8 @@ Statische Website für flowyourdesign.com, gebaut für GitHub Pages. Kein Build-
 - [ ] Datenschutz: Anschrift eintragen, Hinweiskasten löschen; Widerrufsbelehrung für Online-Buchungen ergänzen (IHK-Vorgaben prüfen)
 - [ ] TidyCal aufräumen: doppeltes Sound-Bath-Listing löschen, Sound Bath auf 29 € (Gruppe), Wake-up Call in „Orientierungsgespräch (20 Min)“ umbenennen und auf 20 Minuten kürzen
 - [ ] Altes 88-€-Basic-Reading deaktivieren; neue Listings anlegen: Blueprint & Direction (189 € Einführung / 229 € regulär, 90 Min), Systemisches Coaching (149 € / 5er 690 €), Parent & Child Compass (299 €), Family Dynamics Intensive (449 €), Private Sound Session (129 €, 75 Min), Sound-Bath-Fünferkarte (125 €) – danach die `mailto:`-Buttons in `angebot.html` gegen TidyCal-Links tauschen
-- [ ] Back to You: Betapreis 990 € gilt für die ersten sechs Teilnehmerinnen, danach auf 1.490 € anheben (Datum/Zähler intern festhalten)
+- [ ] Neue Angebote in TidyCal/Preisliste nachziehen: Klar entscheiden (399 €, 3 Sessions), Flow Circle (29 €/Monat, erst nach Warteliste starten), Mini-Klangreise (15-Min-Audio aufnehmen und als Antwortmail-Vorlage hinterlegen)
+- [ ] Zurück zu dir: Gründungsrunden-Preis 990 € gilt für die ersten sechs Teilnehmerinnen, danach auf 1.490 € anheben (Datum/Zähler intern festhalten)
 
 ## Aus dem Businessplan noch offen (nicht Website, aber als Nächstes)
 
@@ -38,6 +39,14 @@ Statische Website für flowyourdesign.com, gebaut für GitHub Pages. Kein Build-
 - Premium-Report (29 €) als erste App-Monetarisierung testen; GitHub-Repository vor größerem Rollout auf privat stellen oder Build-Deployment trennen
 - E-Mail-Strecke (5 Mails) nach Chartberechnung aufsetzen
 - 6 Beta-Kundinnen für Back to You über Bestandskontakte und lokale Netzwerke gewinnen, Fallstudien dokumentieren
+
+## Neue Fotos einpflegen (picdrop-Galerie)
+
+Die Galerie ist für automatische Zugriffe gesperrt – daher manuell: Fotos aus picdrop herunterladen, die fünf besten in `/assets` legen und in den HTML-Dateien die `assets.zyrosite.com`-URLs ersetzen (einfach nach `zyrosite` suchen). Empfohlene Zuordnung: 1 warmes Hochformat-Portrait für den Hero (`index.html`), 1 Portrait + 1 Ambiente für die Collage, je 1 Bild für Klar-entscheiden-, Flow-Circle- und Klang-Sektion. Hochformate ca. 4:5 beschneiden, unter 400 KB pro Bild (z. B. squoosh.app).
+
+## Schrift TAN Twinkle (Sarahs Wunsch-Highlight-Schrift)
+
+TAN Twinkle ist eine kommerzielle Schrift der TAN Type Foundry und darf nicht ohne Lizenz eingebunden werden. Lizenz kaufen (tantypefoundry.com, Desktop+Web), die Datei als `fonts/TANTwinkle.woff2` ablegen – fertig, der `@font-face`-Slot existiert bereits. Bis dahin zeigt die Seite automatisch Cormorant Garamond als eleganten Fallback. Raleway ist bereits lokal eingebunden.
 
 ## Nächste Ausbaustufen
 

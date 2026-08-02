@@ -6,9 +6,9 @@
    ============================================================== */
 
 :root {
-  --nacht: #0C0442;
-  --nacht-tief: #08022F;
-  --nacht-2: #1A1157;
+  --nacht: #0C004D;
+  --nacht-tief: #070038;
+  --nacht-2: #1B1166;
   --creme: #FBF7F1;
   --blush: #F6ECE3;
   --sand: #F1E7D7;
@@ -25,8 +25,8 @@
   --linie-gold: rgba(184, 144, 63, 0.4);
   --linie-hell: rgba(255, 255, 255, 0.16);
 
-  --font-display: "Cormorant Garamond", "Times New Roman", serif;
-  --font-body: "Jost", "Avenir Next", sans-serif;
+  --font-display: "TAN Twinkle", "Cormorant Garamond", "Times New Roman", serif;
+  --font-body: "Raleway", "Avenir Next", sans-serif;
 
   --w-content: 1200px;
   --w-narrow: 800px;
@@ -44,7 +44,7 @@ html { scroll-behavior: smooth; }
 body {
   font-family: var(--font-body);
   font-weight: 400;
-  font-size: 1.05rem;
+  font-size: 1.02rem;
   line-height: 1.72;
   color: var(--tinte);
   background: var(--creme);

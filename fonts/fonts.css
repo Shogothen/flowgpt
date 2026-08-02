@@ -1,4 +1,15 @@
-/* Lokale variable Schriften – keine Übertragung an Dritte */
+/* Lokale Schriften – keine Übertragung an Dritte */
+
+/* TAN Twinkle ist eine kommerzielle Schrift (TAN Type Foundry).
+   Nach Lizenzkauf die Datei als TANTwinkle.woff2 in diesen Ordner legen –
+   bis dahin greift automatisch Cormorant Garamond als Fallback. */
+@font-face {
+  font-family: "TAN Twinkle";
+  src: url("TANTwinkle.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 @font-face {
   font-family: "Cormorant Garamond";
   src: url("CormorantGaramond.woff2") format("woff2");
@@ -14,15 +25,15 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "Jost";
-  src: url("Jost.woff2") format("woff2");
+  font-family: "Raleway";
+  src: url("Raleway.woff2") format("woff2");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Jost";
-  src: url("Jost-Italic.woff2") format("woff2");
+  font-family: "Raleway";
+  src: url("Raleway-Italic.woff2") format("woff2");
   font-weight: 100 900;
   font-style: italic;
   font-display: swap;
