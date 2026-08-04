@@ -364,10 +364,11 @@ a { color: inherit; }
 }
 .media--wide { aspect-ratio: 16 / 10; }
 .media--panel {
-  background: rgba(255, 255, 255, 0.96);
-  padding: clamp(0.9rem, 1.8vw, 1.4rem);
-  border: 1px solid var(--gold-rand);
+  background: var(--glas);
+  padding: clamp(0.6rem, 1.2vw, 0.9rem);
+  border: 1px solid var(--glas-rand);
   border-radius: 20px;
+  backdrop-filter: blur(10px);
 }
 .media--panel img { object-fit: contain; height: auto; }
 
@@ -621,11 +622,12 @@ a { color: inherit; }
 }
 .split__media--panel > img {
   aspect-ratio: auto;
+  height: auto;
   object-fit: contain;
-  background: rgba(255, 255, 255, 0.96);
-  padding: clamp(0.9rem, 1.8vw, 1.4rem);
-  border: 1px solid var(--gold-rand);
-  border-radius: 20px;
+  background: transparent;
+  padding: 0;
+  border: 1px solid var(--glas-rand);
+  border-radius: 16px;
 }
 
 /* Collage */
